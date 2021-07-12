@@ -1,16 +1,27 @@
 package com.example.QRCodeAPI;
 
 public class QRCode {
-    private final String content;
+    private String code;
 
-    public QRCode(String content){
-        this.content = content;
+    public QRCode(){
+    }
+
+    public QRCode(String code){
+        this.code = code;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
     }
 
     @Override
     public String toString() {
         return "QRCode{" +
-                "content='" + content + '\'' +
+                "content='" + code + '\'' +
                 '}';
     }
 }
